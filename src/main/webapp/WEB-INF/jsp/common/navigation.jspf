@@ -1,0 +1,16 @@
+<nav role="navigation" class="navbar navbar-default">
+	<div class="navbar-collapse">
+	
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/">Welcome</a></li>
+			<c:if test = "${isAdmin}">
+				<li><a href="/list-books">Books</a></li>
+				<li><a href="/list-users">Users</a></li>
+			</c:if>
+			<li><a href="/list-search">Search</a></li>
+		</ul>
+		<ul class="nav navbar-nav">
+			<li><a href="/logout">Logout</a></li>
+		</ul>
+	</div>
+</nav>
